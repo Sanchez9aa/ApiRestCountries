@@ -1,17 +1,7 @@
 import './countryList.css'
-import { useEffect, useState} from 'react'
 import CountryCard from '../countryCard/CountryCard'
-import getApi from '../../services/getApi'
 
-const CountryList = () => {
-
-    const [countries, setCountries] = useState([])
-
-    
-    useEffect(()=>{
-        getApi.getAllCountries(setCountries)
-    }, [])
-
+const CountryList = ({countries}) => {
     console.log(countries)
 
     return (
