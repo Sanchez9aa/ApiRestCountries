@@ -13,7 +13,7 @@ const SearchFilter = () => {
             placeholder="Search for a country..." />
         </div>
         <div className="sf-rigth">
-          <select name="" id="countries" className="sf-rigth-filter">
+          <select name="" className="sf-rigth-filter">
             <option style={{display: "none"}} disabled selected>Filter by Region</option>
             <option value="Africa">Africa</option>
             <option value="America">America</option>

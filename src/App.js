@@ -1,12 +1,21 @@
-import Header from './components/header/Header'
-import SearchFilter from './components/searchFilter/SearchFilter'
+
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom"
+import CountryPage from './components/countryPage/CountryPage';
+import Home from './components/home/Home';
+
 
 const App = () => {
   return (
-    <div className="App">
-      <Header />
-      <SearchFilter />
-    </div>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/:country" element={<CountryPage />} />
+      </Routes>
+    </Router>
   );
 }
 
