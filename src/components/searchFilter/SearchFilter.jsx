@@ -4,14 +4,24 @@ import { useState } from "react";
 import CountryList from "../countryList/CountryList";
 
 const SearchFilter = () => {
+  const searchInitState = {
+    input: "",
+    select: ""
+  }
+  const [search, setSearch] = useState(searchInitState);
 
-  const [search, setSearch] = useState("");
+  
   
 
-  const handleChange = async (e) => {
-    setSearch(e.target.value)
+  const handleInputChange = (e) => {
+    setSearch({...search, input: e.target.value})
     console.log(search)
   }
+
+  const handleSelectChange = (e) => {
+    setSearch({...search, select: e.target.value})
+    console.log(search)
+  } 
 
   return (
     <>
@@ -23,14 +33,15 @@ const SearchFilter = () => {
               type="text"
               className="sf-left-search"
               placeholder="Search for a country..."
-              onChange={(e) => handleChange(e)}
+              onChange={(e) => handleInputChange(e)}
             />
           </div>
           <div className="sf-rigth">
-            <select name="" className="sf-rigth-filter">
+            <select name="" onChange={(e) => handleSelectChange(e)} className="sf-rigth-filter">
               <option style={{ display: "none" }} disabled selected>
                 Filter by Region
               </option>
+              <option value=""></option>
               <option value="Africa">Africa</option>
               <option value="America">America</option>
               <option value="Asia">Asia</option>
