@@ -39,7 +39,8 @@ const CountryPage = () => {
                         <strong>Native Name:</strong> {data.name?.official}
                       </li>
                       <li>
-                        <strong>Population:</strong> {data.population.toLocaleString()}
+                        <strong>Population:</strong>{" "}
+                        {data.population.toLocaleString()}
                       </li>
                       <li>
                         <strong>Region:</strong> {data.region}
@@ -65,16 +66,20 @@ const CountryPage = () => {
                       </li>
                       <li>
                         <strong>Languages:</strong>{" "}
-                        {Object.values(data.languages).map((x) => x).join(', ')}
+                        {Object.values(data.languages)
+                          .map((x) => x)
+                          .join(", ")}
                       </li>
                     </ul>
                   </div>
                 </div>
                 <div className="cp-moreCountries">
-									<span><strong>Border Countries: </strong></span>
+                  <span>
+                    <strong>Border Countries: </strong>
+                  </span>
                   {data.borders.map((x) => (
-										<BorderCountry key={x} countries={x} />
-									))}
+                    <BorderCountry key={x} countries={x} />
+                  ))}
                 </div>
               </div>
             </div>
