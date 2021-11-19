@@ -11,7 +11,7 @@ const Home = () => {
     <>
       <Toggle />
       <Header />
-      <div className={dark.state.darkmode ? null : "darkBG"}>
+      <div className={!dark.state.darkmode ? null : "darkBG"}>
         <SearchFilter />
       </div>
     </>

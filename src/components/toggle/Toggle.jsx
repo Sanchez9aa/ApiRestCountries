@@ -1,5 +1,5 @@
 import './toggle.css'
-import {useContext, useState} from 'react'
+import {useContext} from 'react'
 import { DarkContext } from '../../contextApi'
 import {Moon} from 'react-feather'
 
@@ -13,9 +13,9 @@ const Toggle = () => {
     }
     
     return(
-        <div className={dark.state.darkmode ? "tg" : "tg darkEL shadow"} onClick={handleClick}>
-            <Moon size={16} color={dark.state.darkmode ? "black" : "white"} />
-            <span className={dark.state.darkmode ? null : "darkColor"}>Dark Mode</span>
+        <div className={!dark.state.darkmode ? "tg" : "tg darkEL shadow"} onClick={handleClick}>
+            <Moon size={20} color={!dark.state.darkmode ? "black" : "white"} />
+            <span className={!dark.state.darkmode ? null : "darkColor"}>Dark Mode</span>
         </div>
     )
 }

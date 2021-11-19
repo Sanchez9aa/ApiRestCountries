@@ -7,8 +7,8 @@ const Header = () => {
     const dark = useContext(DarkContext)
 
     return (
-        <div className={ dark.state.darkmode ? "header" : "header darkBG border"}>
-            <h1 className={ dark.state.darkmode ? "header-title" : "header-title darkColor"}>
+        <div className={ !dark.state.darkmode ? "header" : "header darkBG border"}>
+            <h1 className={ !dark.state.darkmode ? "header-title" : "header-title darkColor"}>
                 Where in the World
             </h1>
         </div>

@@ -15,7 +15,7 @@
     height: 50%;
 }
 
-.cc-img img{
+.cc-img-img{
     width: 100%;
     height: 100%;
     border-radius: 10px 10px 0 0;
@@ -34,10 +34,14 @@
     border-radius: 0 0 10px 10px;
 }
 
+.cc-info li {
+    padding: 5px 0;
+}
+
 .cc-title{
     font-weight: 600;
     font-size: 18px;
-    margin-top: 5px;
+    margin: 10px 0 ;
 }
 
 .cc-moreInfo ul{

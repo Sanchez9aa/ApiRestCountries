@@ -13,7 +13,7 @@
 
 .sf-left{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   margin: 0 15px;
   padding: 10px;
@@ -24,15 +24,15 @@
   background-color: white;
 }
 
-.sf-left img{
-  height: 26px;
-  width: 26px;
+.sf-left-icon{
+  height: 20px;
+  width: 20px;
   object-fit: cover;
   margin-right: 15px;
   
 }
 
-.sf-left input{
+.sf-left-search{
   border: none;
   font-size: 14px;
   font-weight: 600;

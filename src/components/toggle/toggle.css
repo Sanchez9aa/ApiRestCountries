@@ -19,26 +19,26 @@
 }
 
 .darkEL{
-  background-color: hsl(209, 23%, 22%);
+  background-color: hsl(209, 23%, 22%) !important; 
 }
 
 .darkBG{
-  background-color: hsl(207, 26%, 17%);
+  background-color: hsl(207, 26%, 17%) !important; 
 }
 
 .darkColor{
-  color:hsl(0, 0%, 100%);
+  color:hsl(0, 0%, 100%) !important; 
 }
 
 .shadow{
-	box-shadow: 1px 1px 5px 1px #2c2c2c;
+	box-shadow: 1px 1px 5px 1px #2c2c2c !important;
 }
 
 .border{
-	border-color: #2c2c2c;
+	border-color: hsl(0, 0%, 0%) !important
 }
 
 .option{
-  background-color: hsl(209, 23%, 22%);
-  color:hsl(0, 0%, 100%);
+  background-color: hsl(209, 23%, 22%) !important; 
+  color:hsl(0, 0%, 75%) !important; 
 }
