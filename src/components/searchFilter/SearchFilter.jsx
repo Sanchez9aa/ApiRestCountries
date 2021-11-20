@@ -37,11 +37,11 @@ const SearchFilter = () => {
             />
           </div>
           <div className={!dark.state.darkmode ? "sf-rigth" : "sf-rigth darkEL shadow"}>
-            <select name="" onChange={(e) => handleSelectChange(e)} className={!dark.state.darkmode ? "sf-rigth-filter" : "sf-rigth-filter darkColor active"}>
-              <option style={{ display: "none" }} disabled selected>
+            <select onChange={(e) => handleSelectChange(e)} className={!dark.state.darkmode ? "sf-rigth-filter" : "sf-rigth-filter darkColor active"}>
+              <option style={{ display: "none" }} disabled defaultChecked>
                 Filter by Region
               </option>
-              <option className={!dark.state.darkmode ? "" : "darkEL darkColor"} value=""></option>
+              <option className={!dark.state.darkmode ? "" : "darkEL darkColor"} value="">All</option>
               <option className={!dark.state.darkmode ? "" : "darkEL darkColor"} value="Africa">Africa</option>
               <option className={!dark.state.darkmode ? "" : "darkEL darkColor"} value="America">America</option>
               <option className={!dark.state.darkmode ? "" : "darkEL darkColor"} value="Asia">Asia</option>

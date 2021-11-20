@@ -8,9 +8,6 @@ const CountryList = ({ search }) => {
   const [countriesSearched, setCountriesSearched] = useState([]);
   const [countriesBoth, setCountriesBoth] = useState([]);
 
-  console.log(search);
-  console.log(countries);
-
   useEffect(() => {
     getApi.getAllCountries(setCountries);
   }, []);

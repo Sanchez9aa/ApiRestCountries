@@ -73,4 +73,19 @@ border: none;
   background: transparent;
 }
 
+@media screen and (max-width: 480px) {
+  .sf-wrapper{
+    flex-direction: column;
+  }
 
+  .sf-left{
+    width: auto;
+    padding: 15px;
+    margin-bottom: 35px;
+    justify-content: space-evenly;
+  }
+
+  .sf-rigth{
+    padding: 15px;
+  }
+}

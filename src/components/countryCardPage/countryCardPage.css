@@ -96,3 +96,30 @@ html, body {
   align-items: center;
 }
 
+@media screen and (max-width: 480px) {
+  .cp-country{
+    flex-direction: column;
+  }
+
+  .cp-back{
+    margin-left: 15px;
+  }
+
+  .cp-info{
+    margin-left: 0;
+  }
+
+  .header-title{
+    font-size: 16px;
+    margin-left: 15px;
+  }
+
+  .cp-img{
+    margin-left: 15px;
+  }
+
+  .cp-img img{
+    width: auto;
+    height: auto;
+  }
+}

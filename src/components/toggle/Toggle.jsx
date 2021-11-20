@@ -6,7 +6,6 @@ import {Moon} from 'react-feather'
 const Toggle = () => {
     
     const dark = useContext(DarkContext)
-    console.log(dark)
 
     const handleClick = () => {
         dark.dispatch({type:"TOGGLE"})
