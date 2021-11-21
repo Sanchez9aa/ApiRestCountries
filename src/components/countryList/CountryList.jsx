@@ -36,8 +36,6 @@ const CountryList = ({ search }) => {
     }
   }, [search]);
 
-  useEffect(() => {}, [search.select]);
-
   return (
     <>
       {search.select === "" && search.input === "" ? (
