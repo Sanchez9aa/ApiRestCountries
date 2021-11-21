@@ -26,9 +26,12 @@ const CountryList = ({ search }) => {
       );
       setCountriesSearched(filterCountry);
     } else if (search.select !== "" && search.input !== "") {
-      const filterCountry = countriesSearched.filter(
+      const filterRegion = countriesSearched.filter(x => x.region.toLowerCase().indexOf(search.select.toLowerCase()) > -1)
+      console.log(filterRegion)
+      const filterCountry = filterRegion.filter(
         (x) => x.name.common.toLowerCase().indexOf(search.input.toLowerCase()) > -1
       );
+      console.log(filterCountry)
       setCountriesBoth(filterCountry);
     }
   }, [search]);
