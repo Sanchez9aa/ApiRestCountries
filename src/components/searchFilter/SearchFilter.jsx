@@ -29,7 +29,6 @@ const SearchFilter = () => {
         <div className="sf-wrapper">
           <div className={!dark.state.darkmode ? "sf-left" : "sf-left darkEL shadow"}>
             <Search arial-hidden="true" size={20} color={!dark.state.darkmode ? "black" : "white"}  />
-            <label htmlFor="search">Search for a country...</label>
             <input
               type="text"
               name="search"
