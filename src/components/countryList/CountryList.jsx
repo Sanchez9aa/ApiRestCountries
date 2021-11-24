@@ -13,6 +13,7 @@ const CountryList = ({ search }) => {
   }, []);
 
   useEffect(() => {
+    const searchCountry = () => {
     if (search.input !== "" && search.select === "") {
       const filterCountry = countries.filter(
         (x) =>
@@ -34,6 +35,8 @@ const CountryList = ({ search }) => {
       console.log(filterCountry)
       setCountriesBoth(filterCountry);
     }
+  }
+  searchCountry()
   }, [search]);
 
   return (
