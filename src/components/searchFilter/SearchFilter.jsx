@@ -28,11 +28,12 @@ const SearchFilter = () => {
         <div className="sf">
         <div className="sf-wrapper">
           <div className={!dark.state.darkmode ? "sf-left" : "sf-left darkEL shadow"}>
-            <Search size={20} color={!dark.state.darkmode ? "black" : "white"}  />
+            <Search arial-hidden="true" size={20} color={!dark.state.darkmode ? "black" : "white"}  />
+            <label htmlFor="search">Search for a country...</label>
             <input
               type="text"
+              name="search"
               className={!dark.state.darkmode ? "sf-left-search" : "sf-left-search darkColor" }
-              placeholder="Search for a country..."
               onChange={(e) => handleInputChange(e)}
             />
           </div>

@@ -7,15 +7,8 @@
     right: 15px;
     top: 15px;
     cursor: pointer;
-    border-radius: 10px;
-    box-shadow: 1px 1px 5px 1px #e9e9e9;
-    background-color: white;
+    border-radius: 5px;
     align-items: center;
-}
-
-.tg img{
-    height: 16px;
-    width: 16px;
 }
 
 .darkEL{
@@ -31,7 +24,7 @@
 }
 
 .shadow{
-	box-shadow: 1px 1px 5px 1px #2c2c2c !important;
+	box-shadow: 1px 0 6px 1px hsl(0deg 0% 13%) !important;
 }
 
 .border{
@@ -41,6 +34,13 @@
 .option{
   background-color: hsl(209, 23%, 22%) !important; 
   color:hsl(0, 0%, 75%) !important; 
+}
+
+.visual-hidden{
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
 }
 
 @media screen and (max-width: 480px) {

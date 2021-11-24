@@ -24,11 +24,11 @@ const CountryCardPage = ({ data }) => {
               <div className="cp-img">
                 <img
                   src={data.flags.png}
-                  alt={`Bandera de ${data.name?.common} `}
+                  alt={`Flag of ${data.name?.common} `}
                 />
               </div>
               <div className="cp-info">
-                <h2 className={!dark.state.darkmode ? "cp-title" : "cp-title darkColor"}>{data.name?.common}</h2>
+                <h1 className={!dark.state.darkmode ? "cp-title" : "cp-title darkColor"}>{data.name?.common}</h1>
                 <div className="cp-moreInfo">
                   <div className="cp-moreInfo1">
                     <ul>

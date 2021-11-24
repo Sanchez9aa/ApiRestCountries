@@ -1,5 +1,5 @@
 import Header from "../header/Header";
-import SearchFilter from "../searchFilter/SearchFilter";
+import Main from "../main/Main";
 import { useContext } from "react";
 import { DarkContext } from "../../contextApi";
 
@@ -11,7 +11,7 @@ const Home = () => {
       
       <Header />
       <div className={!dark.state.darkmode ? null : "darkBG"}>
-        <SearchFilter />
+        <Main />
       </div>
     </>
   );

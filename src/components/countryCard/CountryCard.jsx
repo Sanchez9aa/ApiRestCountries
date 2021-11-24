@@ -11,7 +11,7 @@ const CountryCard = ({name, flag, population, region, capital}) => {
         <div className={!dark.state.darkmode ? "cc" : "cc shadow"}>
             <div className="cc-img">
                 <Link to={`/${name}`}>
-                    <img className={!dark.state.darkmode ? "cc-img-img" : "cc-img-img border"} src={flag} alt={`Bandera de ${name}`} />
+                    <img className={!dark.state.darkmode ? "cc-img-img" : "cc-img-img border"} src={flag} alt={`Flag of ${name}`} />
                 </Link>
             </div>
             <div className={!dark.state.darkmode ? "cc-info" : "cc-info darkEL"}>

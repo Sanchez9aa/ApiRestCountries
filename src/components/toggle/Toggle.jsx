@@ -12,8 +12,8 @@ const Toggle = () => {
     }
     
     return(
-        <div className={!dark.state.darkmode ? "tg" : "tg darkEL shadow"} onClick={handleClick}>
-            <Moon size={20} color={!dark.state.darkmode ? "black" : "white"} />
+        <div className="tg" onClick={handleClick}>
+            <Moon aria-hidden="true" size={20} color={!dark.state.darkmode ? "black" : "white"} />
             <span className={!dark.state.darkmode ? null : "darkColor"}>Dark Mode</span>
         </div>
     )
