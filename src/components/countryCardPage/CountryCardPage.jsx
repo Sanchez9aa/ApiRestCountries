@@ -72,9 +72,13 @@ const CountryCardPage = ({ data }) => {
                 </div>
                 <div className="cp-moreCountries">
                   <span>
-                    <strong className={!dark.state.darkmode ? null : "darkColor"}>Border Countries: </strong>
+                    <strong className={!dark.state.darkmode ? null : "darkColor"}>Border Countries:</strong>
                   </span>
-                  {data.borders.map((x) => (
+
+                  { !data.borders 
+                  ? <BorderCountry countries={null} />
+                  : 
+                  data.borders.map((x) => (
                     <BorderCountry key={x} countries={x} />
                   ))}
                 </div>
