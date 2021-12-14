@@ -8,9 +8,8 @@ const Home = () => {
 
   return (
     <>
-      
       <Header />
-      <div className={!dark.state.darkmode ? null : "darkBG"}>
+      <div className={!dark.state.darkmode ? "home" : "home darkBG"}>
         <Main />
       </div>
     </>

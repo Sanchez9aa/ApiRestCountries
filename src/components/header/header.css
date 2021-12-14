@@ -7,11 +7,12 @@
   align-items: center;
   position: relative;
   background: #fff;
+  transition: 0.5s linear;
 }
 
 .header-wrapper{
   max-width: 1300px;
-  position: fixed;
+  position: absolute;
   width: 100%;
 }
 
