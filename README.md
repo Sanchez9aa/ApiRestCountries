@@ -1,4 +1,4 @@
-<h1>API REST COUNTRY<h1>
+<h1>API REST COUNTRY</h1>
 
 This project is taken as an advanced project of Frontend Mentor io. It is a country search engine connected to the api of apirestcountry v2.
 
